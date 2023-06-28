@@ -21,6 +21,9 @@ http://test2.alisawebdev.com/
 ### Запуск проекта
 
 git clone https://github.com/AlisaCosmos/overeas.git
+
 cd overeas
+
 npm install
+
 npm start
