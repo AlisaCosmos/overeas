@@ -11,10 +11,12 @@ http://test2.alisawebdev.com/
 
 ### Используемые технологии:
 
-HTML5/СSS3
-SCSS
-React
-AJAX
+- HTML5/СSS3
+- SCSS
+- ReactJS 18
+- React Hooks
+- Router v6
+- AJAX
 
 ### Запуск проекта
 
