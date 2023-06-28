@@ -1,0 +1,206 @@
+@import "../../styles/_vars.scss";
+
+.typesOfCargo {
+    /* height: 905px; */
+    margin-bottom: 140px;
+}
+
+.typesOfCargo__title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+    color: #4f4f4f;
+    margin-bottom: 21px;
+}
+.typesOfCargo__titleAccent {
+    color: #1534a3;
+}
+
+.typesOfCargo__subTitle {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: $textColor;
+}
+.typesOfCargo__subTitleAccent {
+    color: #1433a0;
+}
+
+.typesOfCargo__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 56px;
+    height: 481px;
+
+    background-image: url("../../assets/imgs/typesOfCargo_background.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: 450px;
+    background-position-y: bottom;
+}
+
+.typesOfCargo__mainBoxes {
+    margin-top: 61px;
+    width: 464px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.typesOfCargo__mainBoxes__left,
+.typesOfCargo__mainBoxes__right {
+    height: 364px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.typesOfCargo__box {
+    width: 130px;
+    height: 130px;
+    background: #ffffff;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typesOfCargo__main {
+    ul {
+        list-style-position: inside;
+        li {
+            list-style: none;
+        }
+        li:before {
+            content: "·";
+            font-size: 32px;
+            vertical-align: bottom;
+            padding: 0px 15px;
+        }
+    }
+}
+.typesOfCargo__mainText {
+    margin-top: 94px;
+    width: 427px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+    color: $textColor;
+}
+.typesOfCargo__box__img {
+    max-width: 100%;
+}
+
+@media (max-width: $tablet) {
+    .typesOfCargo {
+        margin-bottom: 76px;
+        &__title {
+            font-size: 45px;
+            line-height: 55px;
+            margin: 0 auto;
+            margin-bottom: 33px;
+            width: 615px;
+            
+        }
+        
+        &__subTitle {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 58px;
+            text-align: center;
+            color: $textColor;
+        }
+        &__mainBoxes {
+            width: 360px;
+            margin-top: 0;
+            position: relative;
+        }
+        &__box {
+            width: 120px;
+            height: 120px;  
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+        
+        }
+        &__main {
+            background-position-x: 271px;
+        }
+
+        &__mainBoxes__left,
+        &__mainBoxes__right {
+            height: 480px;
+        }
+        &__mainText {
+            /* width: 283px; */
+            width: 305px;
+            margin-top: 0;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &__btnWrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+}
+@media (max-width: $mobile) {
+    .typesOfCargo {
+        margin-bottom: 50px;
+        &__title {
+            font-size: 22px;
+            line-height: 26px;
+            margin-bottom: 8px;
+            width: 318px;
+        }
+        
+        &__subTitle {
+            font-size: 10px;
+            line-height: 12px;
+            margin-bottom: 30px;
+        }
+        &__main {
+            height: 140px;
+            background-size: 60px 46px;
+            background-position-x: 93px;
+            ul {
+                li:before {
+                    font-size: 10px;
+                    padding: 0px 6px;
+                }
+            }
+        }
+        &__mainBoxes {
+            margin-top: 0;
+            width: 120px;
+        }
+        &__mainText {
+            margin-top: 0;
+            width: 130px;
+            font-size: 10px;
+            line-height: 12px;
+        }
+        
+        &__box {
+            width: 40px;
+            height: 40px;  
+        }
+        &__mainBoxes__left,
+        &__mainBoxes__right {
+            height: 140px;
+        }
+        &__box__imgWrapper {
+            width: 20px;
+            /* height: 18px; */
+        }
+        /* .typesOfCargo__main {
+            height: 140px;
+        } */
+    }
+}

@@ -1,0 +1,202 @@
+@import "../../styles/_vars.scss";
+.cooperation {
+    /* height: 1215px; */
+    margin-bottom: 181px;
+    &__title {
+        margin: 0 auto;
+        margin-bottom: 26px;
+        max-width: 890px;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 54px;
+        text-align: center;
+        color: $accentColor;
+        &_color{
+            color: $accrntColor_number;
+        }
+
+    }
+    &__subTitle {
+        margin-bottom: 100px;
+        font-size: 26px;
+        font-weight: 700;
+        text-align: center;
+        &_color {
+            color:$accentColor_name;
+        }
+    }
+
+.sixSteps__steps {
+    height: 598px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    width: 100%;
+    margin-bottom: 70px;
+}
+.step {
+    position: relative;
+    background-color: #EFEFEF;
+    color: #000000;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+}
+    .step_home {
+        width: 20%;
+        height: 285px;
+        min-width: 245px;
+        max-width: 245px;
+        padding: 13px 13px;
+    }
+    .step_home:not(:last-child) {
+        margin-right: 35px;
+    }
+
+    .step_highlight {
+        background-color: $accentColor;
+        color: #ffffff;
+        margin-top: -70px;
+        .step__number {
+            color: #ffffff;
+        }
+    }
+    .step__number {
+        font-weight: 800;
+        font-size: 60px;
+        text-align: end;
+        color: $accentColor;
+    }
+
+    .step__header {
+        font-weight: 600;
+        font-size: 17px;
+    }
+    .cooperation__item_headerMob {
+        display:none;
+    }
+    &__btnWrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: $tablet) {
+    .cooperation {
+        margin-bottom: 108px;
+        &__title {
+            margin-bottom: 18px;
+            font-size: 45px;
+            line-height: 55px;
+        }
+        &__subTitle {
+            margin-bottom: 40px;
+            font-size: 20px;
+            line-height: 26px;
+            text-align: center;
+        }
+        .step {
+            position: relative; 
+        }
+        .step__number {
+            position: absolute;
+            top: -6px;
+            right: 25px;
+            font-size: 60px;
+        }
+        .sixSteps__steps {
+            height: 670px;
+            justify-content: space-around;
+        }
+        .step_home {
+            height: 210px;
+            min-width: 210px;
+            max-width: 210px;
+            padding: 53px 13px 13px 13px;
+        }
+
+        .step_home:not(:last-child) {
+            margin-right: 0px;
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .cooperation {
+        margin-bottom: 50px;
+        &__title {
+            margin-bottom: 5px;
+            font-size: 22px;
+            line-height: 27px;
+        }
+        &__subTitle {
+            margin-bottom: 24px;
+            font-size: 10px;
+            line-height: 13px;
+        }
+        .sixSteps__steps {
+            /* height: 460px; */
+            height: 550px;
+            justify-content: space-around;
+        }
+        .step {
+            position: relative; 
+        }
+        .step_home {
+            /* width: 20%; */
+            /* height: 100px;
+            min-width: 100px; */ //как на макете
+            height: 125px;
+            min-width: 125px;
+            max-width: 125px;
+            padding: 33px 13px 13px 13px;
+            /* margin-right: 40px; */
+
+           /*  &:nth-child(1) {
+                margin-right: 20px;
+            }
+            &:nth-child(2) {
+                margin-right: 20px;
+            }
+    
+            &:nth-child(6) {
+                margin-right: 74px;
+            } */
+        }
+        .step_highlight {
+            margin-top: 0;
+        }
+        
+        .step_home:not(:last-child) {
+            margin-right: 0;
+        }
+        /* .step_home:nth-child(1) {
+            margin-right: 20px;
+        }
+        .step_home:nth-child(3) {
+            margin-right: 20px;
+        }
+        .step_home:nth-child(5) {
+            margin-right: 20px;
+        } */
+        .step__number {
+            position: absolute;
+            top: -9px;
+            right: 25px;
+            font-size: 45px;
+        }
+    
+        .step__header {
+            font-size: 10px;
+        }
+
+        .cooperation__item_headerDesc {
+            display: none;
+        }
+        .cooperation__item_headerMob {
+            display: block;
+        }
+    }
+    
+}
+

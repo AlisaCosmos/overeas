@@ -1,0 +1,248 @@
+@import "../../styles/_vars.scss";
+
+.workScheme {
+    margin-bottom: 190px;
+    &__title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+    color: $accentColor;
+    margin-bottom: 45px;
+    }
+    .sixSteps__steps {
+        display: grid;
+        grid-template-rows: 85px 85px;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 37px;
+    }
+    .step_one {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+    .step_two {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        justify-self : end;
+    }
+    .step_three {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        justify-self : center;
+        
+    }
+    .step_four {
+        grid-row: 2 / 3;
+        grid-column: 2 / 4;
+        justify-self : center;
+    }
+    .step_five {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+        justify-self : end;
+    }
+    .step_six {
+        grid-row: 2 / 3;
+        grid-column: 4 / 5;
+    }
+    .step_seven {
+        grid-row: 1 / 2;
+        grid-column: 4 / 5;
+        justify-self : end;
+        
+    }
+    
+    .step__number {
+        font-size: 70px;
+        font-weight: 700;
+        color: $accrntColor_number;
+    }
+    .step__header {
+        font-size: 20px;
+        padding-top: 20px;
+        padding-left: 8px;
+        max-width: 170px;
+    }
+    .step {
+        display: flex;
+    }
+    &__boxIcon, &__boxIconTab {
+        display: none;
+    }
+    &__btn_tab {
+        display: none;;
+    }  
+}
+@media (max-width: $tablet) {
+    .workScheme {
+        margin-bottom: 108px;
+        &__inner {
+            position: relative;
+        }
+        .sixSteps__steps {
+            display: grid;
+            grid-template-rows: 85px 85px 85px;
+            grid-template-columns:  1fr 229px 1fr;
+            row-gap: 30px;
+            position: relative;
+            
+        }
+        .step_one {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
+        .step_two {
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+            justify-self : start;
+            position: absolute;
+            left: -32px;
+        }
+        .step_three {
+            grid-row: 1 / 2;
+            grid-column: 3 / 4;
+            justify-self : start;
+        }
+        .step_four {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+            justify-self : end;
+        }
+        .step_five {
+            grid-row: 2 / 3;
+            grid-column: 3 / 4;
+            justify-self : start;
+            position: absolute;
+            left: -118px;
+        }
+        .step_six {
+            grid-row: 3/ 4;
+            grid-column: 1 / 2;
+        }
+        .step_seven {
+            grid-row: 3 / 4;
+            grid-column: 3 / 4;
+            justify-self: start;
+            
+        }
+        .step__header {
+            max-width: 170px;
+        }
+        &__btn_tab {
+            margin-top: 34px;
+            display: flex;
+            justify-content: center;
+            z-index: 100;
+        }
+        &__boxIconTab {
+            display: block;
+            margin: 0 0 0 auto;
+            position: relative;
+
+            width: 354px;
+            height: 247px;
+            
+        }
+        &__iconTab {
+            display: block;
+            position: absolute;
+            top: -93px;
+            left: -48px;
+            max-width: 100%;
+            transform: rotate(22deg);
+            z-index: -1;
+        }
+    }
+}
+@media (max-width: $mobile)  {
+    .workScheme {
+        margin-bottom: 50px;
+        &__inner {
+            position: relative;
+        }
+        &__title {
+            font-size: 22px;
+            line-height: 21px;
+            margin-bottom: 20px;
+            }
+        .sixSteps__steps {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+            row-gap: 0;
+            margin-bottom: 20px;
+            position: static
+        }
+        .step_one {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            justify-self : start;
+        }
+        .step_two {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+            justify-self : end;
+            position: static
+        }
+        .step_three {
+            grid-row: 3 / 4;
+            grid-column: 1 / 2;
+            justify-self : start;
+            
+        }
+        .step_four {
+            grid-row: 4 / 5;
+            grid-column: 1 / 2;
+            justify-self : end;
+        }
+        .step_five {
+            grid-row: 5 / 6;
+            grid-column: 1 / 2;
+            justify-self : start;
+            position: static
+        }
+        .step_six {
+            grid-row: 6 / 7;
+            grid-column: 1 / 2;
+            justify-self : end;
+        }
+        .step_seven {
+            grid-row: 7 / 8;
+            grid-column: 1/ 2;
+            justify-self : start;        
+        }
+        .step__number {
+            font-size: 45px;
+        }
+        .step__header {
+            font-size: 10px;
+            line-height: 11px;
+            font-weight: 600;
+            min-width: 150px;
+            max-width: 150px;
+        }
+
+        &__btn_tab {
+            display: flex;
+        }
+        &__boxIconTab {
+            display: none;
+        }
+        &__boxIcon {
+            display: block;
+            position: absolute;
+            right: 37px;
+            bottom: 70px;
+            width: 16px;
+            height: 14px;
+        }
+        &__icon {
+            max-width: 100%;
+        }
+
+        &__btnWrapper {
+            justify-content: center;
+        }
+    }
+    
+}

@@ -1,0 +1,215 @@
+@import "../../styles/_vars.scss";
+
+.companyRepresentation {
+    /* height: calc(883px - 54px - 42px); */
+    margin-bottom: 134px;
+}
+
+.companyRepresentation__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.companyRepresentation__main {
+    width: 700px;
+    margin-top: 118px;
+}
+
+.companyRepresentation__mainTitle {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #1a3bac;
+    margin-bottom: 70px;
+}
+
+.companyRepresentation__mainTitle_light {
+    color: $accentColor_light;
+}
+
+.companyRepresentation__mainSubtitle {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+    color: $textColor;
+    margin-bottom: 114px;
+}
+
+.companyRepresentation__boxesWrapper {
+    margin-top: 67px;
+    display: flex;
+    flex-direction: row;
+}
+
+.companyRepresentation__boxesLeft {
+    margin-top: 129px;
+    margin-right: 21px;
+}
+
+.companyRepresentation__boxesLeft,
+.companyRepresentation__boxesRight {
+    .companyRepresentation__box:first-child {
+        margin-bottom: 20px;
+    }
+}
+
+.companyRepresentation__box {
+    width: 200px;
+    height: 200px;
+    background: #f2f2f2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.companyRepresentation__boxDescription {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    color: $textColor;
+    margin: 0px 7px;
+}
+
+.companyRepresentation__boxIcon_diploma {
+    width: 77px;
+    height: 77px;
+    margin-top: 31px;
+    margin-bottom: 17px;
+}
+
+.companyRepresentation__boxIcon_subway {
+    width: 75px;
+    height: 75px;
+    margin-top: 34px;
+    margin-bottom: 31px;
+}
+
+.companyRepresentation__boxIcon_handshake {
+    width: 69px;
+    height: 69px;
+    margin-top: 35px;
+    margin-bottom: 36px;
+}
+
+.companyRepresentation__boxIcon_form {
+    width: 75px;
+    height: 75px;
+    margin-top: 27px;
+    margin-bottom: 38px;
+}
+.companyRepresentation__btn_tab {
+    display: none;
+}
+@media (max-width: $tablet) {
+    .companyRepresentation {
+        margin-bottom: 94px;
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            align-items:center
+        }
+        &__main {
+            margin-top: 50px;
+            width: 100%;
+        }
+        &__mainTitle {
+            font-size: 45px;
+            line-height: 43px;
+            text-align: center;
+            margin-bottom: 23px;
+        }
+        &__mainSubtitle {
+            max-width: 678px;
+            font-size: 21px;
+            line-height: 25px;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 48px;
+        }
+        &__btn_desktop {
+            display: none;
+        }
+        &__btn_tab {
+            display: block;
+        }
+        &__boxesWrapper {
+            margin-top: 0px;
+            margin-bottom: 60px;
+        }
+        .companyRepresentation__boxesLeft {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .companyRepresentation {
+        &__main {
+            margin-top: 56px;
+        }
+        &__mainTitle {
+            font-size: 22px;
+            line-height: 20px;
+            margin-bottom: 11px;
+        }
+        &__mainSubtitle {
+            font-size: 10px;
+            line-height: 12px;
+            margin-bottom: 30px;
+        }
+        &__box {
+            width: 90px;
+            height: 90px;
+        }
+        &__boxDescription {
+            font-size: 9px;
+            font-weight: 600;
+            line-height: 11px;
+            margin: 0px 7px;
+        }
+        
+        &__boxIcon_diploma {
+            width: 19px;
+            height: 24px;
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
+        
+        &__boxIcon_subway {
+            width: 19px;
+            height: 24px;
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
+        
+        &__boxIcon_handshake {
+            width: 19px;
+            height: 24px;
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
+        
+        &__boxIcon_form {
+            width: 19px;
+            height: 24px;
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
+        &__boxesLeft {
+            margin-top: 0;
+            margin-right: 15px;
+        }
+        &__boxesRight {
+            margin-top: 18px;
+        }
+        &__boxesWrapper {
+            margin-bottom: 49px;
+        }
+    }
+
+}

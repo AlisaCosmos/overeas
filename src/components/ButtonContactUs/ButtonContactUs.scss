@@ -1,0 +1,50 @@
+@import "../../styles/_vars.scss";
+
+.buttonContactUs {
+    display: block;
+    width: 250px;
+    height: 66px;
+    background: linear-gradient(180deg, #0f2e99 0%, #1c3daf 31.77%, #08268f 100%);
+    border-radius: 100px;
+
+    font-family: $generalFont;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #ffffff;
+    text-align: center;
+
+    border: 0;
+    padding-top: 19.5px;
+    padding-bottom: 19.5px;
+
+    &:hover {
+        cursor: pointer;
+        background: #0a1e61;
+    }
+}
+@media (max-width: $tablet) {
+    .buttonContactUs {
+        width: 250px;
+        height: 70px;
+
+        font-size: 23px;
+        line-height: 28px;
+
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+    
+}
+@media (max-width: $mobile) {
+    .buttonContactUs {
+        width: 120px;
+        height: 32px;
+
+        font-size: 11px;
+        line-height: 13px;
+
+        padding-top: 9.5px;
+        padding-bottom: 9.5px;
+    }
+}

@@ -1,0 +1,192 @@
+@import "../../styles/_vars.scss";
+
+.help {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+.help__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.help__content {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 60px 70px 60px;
+    background-color: $bgColor;
+    width: 850px;
+    height: 700px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.help__firstSection {
+    align-self: flex-end;
+}
+
+.secondSection {
+    display: flex;
+}
+.secondSection__left {
+    width: 432px;
+    
+}
+.help__cross {
+    width: 16px;
+    height: 16px;
+}
+
+.help__close {
+    background-color: inherit;
+    border: none;
+}
+
+.help__title {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+}
+
+.help__subtitle {
+    margin-bottom: 38px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+}
+.helpModal__imgWrapper{
+    width: 350px;
+    height: 270px;
+    /* align-self: end; */
+    /* display: flex;
+    justify-content: flex-end; */
+}
+.helpModal__img {
+    max-width: 100%;
+}
+.help_messages__header {
+    margin-top: 262px;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+    color: $accentColor;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.help_messages__description {
+    font-size: 29px;
+    line-height: 38px;
+    font-weight: 500;
+    text-align: center;
+}
+
+@media (max-width: $tablet) {
+    .help__content {
+        width: 580px;
+        height: 705px;
+        padding: 44px 36px 82px 60px;
+        max-height: 705px;
+    } 
+    .help__cross {
+        width: 8px;
+        height: 8px;
+    }
+    .help__title {
+        margin-bottom: 20px;
+        font-size: 31px;
+        line-height: 20px;
+    }
+    
+    .help__subtitle {
+        margin-bottom: 25px;
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .secondSection__left {
+        width: 268px;   
+    }
+    .secondSection__right {
+        position: relative; 
+    }
+    .helpModal__imgWrapper{
+        width: 200px;
+        height: 184px;
+        position: absolute;
+        top: 100px;
+        left: 52px;
+    }
+    .help_messages__header {
+        margin-top: 262px;
+        font-size: 36px;
+        line-height: 47px;
+    }
+    .help_messages__description {
+        font-size: 21px;
+        line-height: 28px;
+    }
+}
+@media (max-width: $mobile) {
+    .help__content {
+        flex-direction: column;
+        align-items:center;
+        width: 266px;
+        padding: 19px 16px 17px 16px; //48 справа
+        height: 389px;
+    } 
+    .help__title {
+        margin-bottom: 4px;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+    
+    .help__subtitle {
+        margin-bottom: 14px;
+        font-size: 7px;
+        line-height: 15px;
+    }
+    .secondSection__left {
+        padding-left: 32px;
+        padding-right: 32px;
+        width: 100%;      
+    }
+    .secondSection__left_m {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .secondSection__right {
+        display: none;
+    }
+    .help__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .help_messages__header {
+        margin-top: 116px;
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+    .help_messages__description {
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+}

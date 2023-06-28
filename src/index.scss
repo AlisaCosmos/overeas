@@ -1,0 +1,126 @@
+@import "../src/styles/_vars.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  font-family: $generalFont;
+  background-color: $bgColor;
+  font-weight: 500;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container__row {
+  width: 100%;
+  max-width: calc(1440px - 130px - 130px);
+  //padding: 0 40px;
+  @media (max-width: $tablet) {
+    max-width: calc(834px - 60px - 60px);
+  }
+
+  @media (max-width: $mobile)  {
+    max-width: calc(320px - 10px - 10px);
+    /* padding-left: 20px;
+    padding-right: 20px; */
+  }
+
+  @media (min-width: $ultra)  {
+    max-width: 2220px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.container__row_wide { // для хедера
+  width: 100%;
+  max-width: 1320px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (max-width: $mobile)  {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @media (min-width: $ultra)  {
+    max-width: 2318px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 42px;
+  color: $accentColor;
+
+  @media (max-width: $tablet)  {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  @media (max-width: $mobile)  {
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
+a {
+  color: $textColor;
+  text-decoration: none;
+  &:focus-visible {
+    color: $accentColor;
+  }
+}
+
+@media (hover: hover) {
+  a:hover {
+    cursor: pointer;
+    color: $accentColor;
+    transition: color 0.1s ease;
+  }
+}
+
+@media (hover: none) {
+  a:hover {
+    color: inherit;
+  }
+  a:active {
+    color: $accentColor;
+    outline: none;
+  }
+}
+
+a,
+button,
+input[type="text"],
+input[type="email"],
+input[type="checkbox"],
+input[type="range"],
+input[type="radio"],
+input[type="tel"],
+textarea,
+label,
+div {
+  -webkit-tap-highlight-color: transparent;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+}

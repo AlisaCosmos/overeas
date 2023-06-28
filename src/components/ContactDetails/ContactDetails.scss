@@ -1,0 +1,196 @@
+@import "../../styles/_vars.scss";
+
+.contactDetails {
+    /* height: calc(818px + 69px); */
+}
+.contactDetails__title_mob {
+    display: none;
+}
+.contactDetails__inner {
+    display: grid;
+    grid-template-columns: 1fr 48.75%;
+    width: 100%;
+    /* max-width: 1440px; */
+    padding-left: 130px; //calc((1440px - 1180px) / 2)
+    /* padding-bottom: 69px; */
+    overflow: hidden;
+}
+
+.contactDetails__title {
+    margin-top: 166px;
+    margin-bottom: 55.55px;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: left;
+    color: $accentColor;
+}
+
+.contactDetails__main {
+    display: flex;
+    flex-direction: column;
+    color: $textColor;
+}
+
+.contactDetails__mainAddress {
+    margin-bottom: 41px;
+}
+
+.contactDetails__mainAddress_title,
+.contactDetails__mainCommunication_title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: left;
+}
+
+.contactDetails__mainAddress_text,
+.contactDetails__mainCommunication_text {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 41px;
+    text-align: left;
+}
+
+.contactDetails__mainCommunication_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactDetails__mapWrapper {
+    height: 818px;
+    width: 831px;
+    -webkit-border-radius: 650px;
+    -moz-border-radius: 650px;
+    border-radius: 650px;
+    overflow: hidden;
+}
+.contactDetails__map {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    -webkit-border-radius: 650px;
+    -moz-border-radius: 650px;
+    border-radius: 650px;
+}
+.mainAddress_textSpaseMob {
+    display: none;
+}
+.contactDetails__BurgerImg {
+    display: none;
+}
+.contactDetails__boxIcon {
+    max-width: 100%;
+}
+@media (max-width: $tablet) {
+    .contactDetails {
+        &__inner {
+            /* max-width: 834px; */
+            grid-template-columns: 1fr 63%;
+            padding-left: 60px; //calc((834px - 714px) / 2)
+            /* padding-bottom: 42px; */
+        }
+        &__title {
+            font-size: 45px;
+            line-height: 55px;
+            margin-bottom: 42px;
+            margin-top: 0px;
+        }
+        &__mainAddress {
+            margin-bottom: 70px;
+        }
+        &__mainAddress_title,
+        &__mainCommunication_title {
+            font-size: 24px;
+            line-height: 38px;
+        }
+        &__mainAddress_text,
+        &__mainCommunication_text {
+            font-size: 20px;
+            line-height: 32px;
+        }
+        &__mapWrapper {
+            height: 904px;
+            width: 951px;
+            -webkit-border-radius: 700px;
+            -moz-border-radius: 700px;
+            border-radius: 700px;
+        }
+        &__map {
+            -webkit-border-radius: 700px;
+            -moz-border-radius: 700px;
+            border-radius: 700px;
+        }
+        &__BurgerImg {
+            display: block;
+            position: relative;
+            width: 350px;
+        }
+        &__boxIcon {
+            position: absolute;
+            top:230px;
+            left: -55px;
+            transform: rotate(30deg);
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    #contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .contactDetails { 
+        &__title_mob {
+            display: block;
+        }
+        &__inner {
+            /* max-width: 320px; */
+            grid-template-columns: 1fr 52%;
+            padding-left: 11%;//calc((320px - 300px) / 2)
+            /* padding-bottom: 67px; */
+        }
+        &__title_desk {
+            display: none;
+        }
+        &__title {
+            font-size: 22px;
+            line-height: 27px;
+            margin-bottom: 16px;
+            margin-top: 0;
+        }
+        &__main {
+            padding-right: 10px;
+        }
+        &__mainAddress {
+            margin-bottom: 10px;
+        }
+        &__mainAddress_title,
+        &__mainCommunication_title {
+            font-size: 12px;
+            line-height: 19px;
+        }
+        &__mainAddress_text,
+        &__mainCommunication_text {
+            font-size: 10px;
+            line-height: 16px;
+        }
+        .contactDetails__mapWrapper {
+            display: inline-block;
+            height: 314px;
+            width: 314px;
+        } 
+        .mainAddress_textSpaseMob {
+            display: block;
+        }
+        .contactDetails__BurgerImg {
+            position: static;
+            width: 140px;
+            height: 140px;
+        }
+        &__boxIcon {
+            position: static;
+        }
+    }
+}

@@ -1,0 +1,371 @@
+@import "../../styles/_vars.scss";
+
+.ourServices {
+    /* height: 954px; */
+    margin-bottom: 157px;
+}
+
+.ourServices__title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+    color: $accentColor;
+}
+
+.ourServices__backgroundWrapper {
+    height: calc(567.18px + 107.6px);
+    background-image: url("../../assets/imgs/our_services.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: calc(207px - 130px); // center;
+    background-position-y: bottom;
+    @media (max-width: $tablet) {
+        height: 480px;
+        background-position-x: 0; 
+        background-image: url("../../assets/imgs/our_services_tab.svg");
+    }
+    @media (max-width: $mobile) {
+        height: 203px;
+        background-image: url("../../assets/imgs/our_services_mob.svg");
+    }
+}
+
+.ourServices__main {
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        "customs calculation documentation"
+        "transportation route documentation";
+    grid-template-columns: 505.2px 437px 1fr;
+    justify-items: start;
+    align-content: space-between;
+    padding-top: 87.7px;
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.ourServices__main_tab {
+    display: none;
+}
+
+.customs {
+    width: 215px;
+    grid-area: customs;
+    margin-top: calc(142.25px - 87.7px);
+    margin-left: calc(345.43px - 130px);
+}
+.customs__title {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    color: #1434a2;
+    margin-bottom: 8.23px;
+}
+.customs__description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    color: #676666;
+}
+
+.calculation {
+    width: 190px;
+    grid-area: calculation;
+    margin-top: 0px;
+    margin-left: 76px;
+}
+.calculation__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #1434a2;
+    margin-bottom: 6.38px;
+}
+.calculation__description {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: left;
+    color: #676666;
+}
+
+.transportation {
+    width: 228px;
+    grid-area: transportation;
+    margin-bottom: 114.85px;
+    margin-left: calc(407.2px - 130px);
+}
+.transportation__title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #1434a2;
+    margin-bottom: 13.38px;
+    margin-right: 18px;
+}
+.transportation__description {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: #676666;
+}
+
+.route {
+    width: 194px;
+    grid-area: route;
+    margin-bottom: 115.88px;
+    margin-left: 243px;
+    justify-content: flex-end;
+}
+.route__title {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+    color: #1434a2;
+    margin-bottom: 11.32px;
+}
+.route__description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    color: #676666;
+}
+
+.documentation {
+    width: 204px;
+    grid-area: documentation;
+    margin-top: calc(233.86px - 87.7px);
+    margin-left: 0px;
+}
+.documentation__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #1434a2;
+    margin-bottom: 6.18px;
+}
+.documentation__description {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: left;
+    color: #676666;
+}
+
+.ourServices__btnWrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: calc(156px - 130px);
+}
+
+@media (max-width: $tablet) {
+    .ourServices {
+        /* height: 954px; */
+        margin-bottom: 85px;
+        &__title {
+            font-size: 45px;
+            line-height: 42px;
+        }
+        &__main {
+            padding-top: 77px;
+            grid-template-columns: 334px 190px 1fr;
+        }
+
+        &__desc_tabNone {
+            display: none;
+        }
+        .customs {
+            width: 180px;
+            margin-top: 112px;
+            margin-left: 150px;
+        }
+        
+        
+        .customs__title {
+            font-size: 16px;
+            line-height: 19px;
+        }
+        
+        .calculation {
+            width: 150px;
+            margin-top: 40px;
+            margin-left: 0px;
+        }
+        .calculation__title {
+            font-size: 16px;
+            line-height: 19px;
+        }
+        
+        .transportation {
+            width: 220px;
+            margin-bottom: 0px;
+            margin-left: 104px;
+            margin-top: 72px;
+        }
+        .transportation__title {
+            font-size: 20px;
+            line-height: 22px;
+            text-align: left;
+        }
+        
+        .route {
+            width: 168px;
+            margin-bottom: 128px;
+            margin-left: 116px;
+        }
+        .route__title {
+            font-size: 16px;
+            line-height: 17px;
+        }
+        
+        .documentation {
+            width: 176px;
+            margin-top: 136px;
+            margin-left: 0px;
+        }
+        .documentation__title {
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &__main_tab {
+            margin-top: 96px;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__item_tab {
+            display:flex;
+        }
+        &__item__number {
+            font-size: 25px;
+            font-weight: 800;
+            line-height: 30px;
+            color: #1434a2;
+        }
+        &__item__desc {
+            padding-left: 36px;
+        }
+        &__item__title {
+            font-size: 23px;
+            font-weight: 700;
+            line-height: 25px;
+            color: #1434a2;
+            margin-bottom: 20px;
+            padding-top: 3px;
+        }
+        &__item__description {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+        &_text_decor {
+            color:#1635A4;
+            font-weight: 500;
+        }
+        &__btnWrapper {
+            justify-content: center;
+        }
+        
+    }
+}
+@media (max-width: $mobile) {
+    .ourServices {
+        /* height: 954px; */
+        margin-bottom: 52px;
+        &__title {
+            font-size: 22px;
+            line-height: 21px;
+        }
+        &__main {
+            padding-top: 24px;
+            grid-template-columns: 177px 70px 1fr;
+        }
+        .customs {
+            width: 60px;
+            margin-top: 25px;
+            margin-left: 60px;
+        }
+        .customs__title {
+            font-size: 7px;
+            line-height: 8px;
+        }
+        
+        .calculation {
+            width: 52px;
+            margin-top: 2px;
+            margin-left: 0px;
+        }
+        .calculation__title {
+            font-size: 5px;
+            line-height: 6px;
+        }
+        
+        .transportation {
+            width: 86px;
+            margin-bottom: 0px;
+            margin-left: 47px;
+            margin-top: 32px;
+        }
+        .transportation__title {
+            font-size: 9px;
+            line-height: 10px;
+        }
+        
+        .route {
+            width: 81px;
+            margin-top: 0px;
+            margin-bottom: 48px;
+            margin-left: 40px;
+        }
+        .route__title {
+            font-size: 8px;
+            line-height: 9px;
+        }
+        
+        .documentation {
+            width: 66px;
+            margin-top: 61px;
+            margin-left: 0px;
+        }
+        .documentation__title {
+            font-size: 6px;
+            line-height: 7px;
+        }
+        &__main_tab {
+            gap: 5px;
+            margin-top: 50px;
+            margin-bottom: 14px;
+        }
+
+        &__item__number {
+            font-size: 12px;
+            line-height: 14px;
+        }
+        &__item__desc {
+            padding-left: 5px;
+        }
+        &__item__title {
+            font-size: 12px;
+            line-height: 14px;
+            margin-bottom: 5px;
+            padding-top: 0px;
+        }
+        &__item__description {
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+    }
+}

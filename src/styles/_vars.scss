@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* Breakpoints */
+$smallMobile: 300px;
+$mobile: 480px; //было 480
+$horizonMobile: 900px;
+$smallTablet: 730px;
+$tablet: 959px;
+$desktop: 1199px;
+$ultra: 2500px;
+
+$landscape: 1050px;
+$landscapeMiddle: 668px;
+$landscapeSmall: 500px;
+
+/* Colors */
+$bgColor: #ffffff;
+$accentColor: #08268f;
+$accentColor_light: #0092e4;
+$accrntColor_number: #42BFDB;
+$accentColor_name: #1434A2;
+$titleColor: #4F4F4F;
+$titleMainColor: #1534A3;
+$textColor: #000000;
+
+$labelColor: #08268F;
+
+
+/* Fonts */
+$generalFont: "Montserrat";

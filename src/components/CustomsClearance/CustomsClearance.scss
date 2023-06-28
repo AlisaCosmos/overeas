@@ -1,0 +1,194 @@
+@import "../../styles/_vars.scss";
+
+.customsClearance {
+    margin-bottom: 184px;
+    &__title {
+        margin-bottom: 21px;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 54px;
+        text-align: center;
+        color: $titleColor;
+        &_color {
+            color: $titleMainColor;
+        }
+    }
+    &__subTitle {
+        margin-bottom: 80px;
+        font-size: 26px;
+        font-weight: 700;
+    }
+    &__text {
+        margin-bottom: 40px;
+        font-size: 26px;
+        font-weight: 700;
+        .name_color {
+            color: $accentColor;
+        }
+    }
+    ul {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 32px;
+        list-style-position: inside;
+        li {
+            list-style: none;
+        }
+        li:before {
+            content: "·";
+            font-size: 32px;
+            vertical-align: bottom;
+            padding: 0px 15px;
+        }
+    }
+    &__main {
+        margin-bottom: 158px;
+    }
+    &__mainBoxes {
+        width: 100%;
+        height: 291px;
+        margin-top: 61px;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+        align-content:space-between;
+        
+        /* flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 112px; */
+    }
+    &__box {
+        width: 130px;
+        height: 130px;
+        background: #ffffff;
+        box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__box_one,
+    &__box_six {
+        justify-self : start;
+    }
+    &__box_five,
+    &__box_ten {
+        justify-self : end;
+    }
+    &__box__img {
+        max-width: 100%;
+    }
+    .customClearance__btn_tab {
+        display: none;;
+    } 
+}
+
+@media (max-width: $tablet)  {
+    .customsClearance {
+        margin-bottom: 161px;
+        &__title {
+            max-width: 691px;
+            margin: 0 auto;
+            margin-bottom: 42px;
+            font-size: 45px;
+            line-height: 55px;
+        }
+        &__subTitle {
+            margin-bottom: 116px;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+        }
+        &__text {
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 700;
+        }
+        ul {
+            font-size: 20px;
+            line-height: 30px;
+            li:before {
+                content: "·";
+                font-size: 20px;
+                vertical-align: bottom;
+                padding: 0px 15px;
+            }
+        }
+        &__main {
+            margin-bottom: 76px;
+        }
+        &__mainBoxes {
+            width: 100%;
+            height: 291px;
+            margin-top: 61px;
+            
+        }
+        .customClearance__btn_tab  {
+            margin-top: 51px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+}
+@media (max-width: $mobile)  {
+    .customsClearance {
+        margin-bottom: 35px;
+        &__title {
+            max-width: 299px;
+            margin-bottom: 20px;
+            font-size: 22px;
+            line-height: 26px;
+        }
+        &__subTitle {
+            margin-bottom: 13px;
+            font-size: 10px;
+            line-height: 12px;
+            text-align: center;
+        }
+        &__text {
+            margin-bottom: 20px;
+            font-size: 10px;
+            line-height: 12px;
+            font-weight: 700;
+        }
+        ul {
+            font-size: 10px;
+            line-height: 12px;
+            li:before {
+                content: "·";
+                font-size: 10px;
+                vertical-align: bottom;
+                padding: 0px 6px;
+            }
+        }
+        &__main {
+            margin-bottom: 24px;
+        }
+        &__mainBoxes {
+            margin-top: 0;
+            height: 114px;
+
+        }
+        &__box {
+            width: 51px;
+            height: 51px;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__box__imgWrapper {
+            width: 31px;
+            height: 31px;
+        }
+        .customClearance__btn_tab  {
+            display: none;
+        }
+    }
+    
+}
